@@ -227,6 +227,52 @@
       font-size: 14px;
     }
 
+    .tag {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 4px 10px;
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Certificates and achievements */
+
+    .credential-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .credential {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .credential h3 {
+      margin: 8px 0;
+      font-size: 19px;
+    }
+
+    .credential p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .credential-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .credential-link:hover {
+      text-decoration: underline;
+    }
+
     .contact-text {
       max-width: 550px;
       color: var(--muted);
@@ -280,7 +326,8 @@
       }
 
       .project-grid,
-      .other-projects {
+      .other-projects,
+      .credential-grid {
         grid-template-columns: 1fr;
       }
 
@@ -302,10 +349,12 @@
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#explorations">More</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
           <a class="nav-social" href="https://www.tiktok.com/@formto20" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
-<a class="nav-social" href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-<a class="nav-social" href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a class="nav-social" href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a class="nav-social" href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
         </div>
       </nav>
     </div>
@@ -440,9 +489,88 @@
       </div>
     </section>
 
+    <section id="certificates">
+      <div class="container">
+        <div class="section-label">04 / Learning</div>
+
+        <h2>Certificates</h2>
+
+        <p class="section-intro">
+          Courses and learning experiences that have helped me develop
+          my technical skills and explore new fields.
+        </p>
+
+        <div class="credential-grid">
+
+          <article class="credential">
+            <div class="project-type">Computer Science · 2026</div>
+            <h3>Introduction to Cybersecurity</h3>
+            <p>
+              CS50, Harvard University.
+              Completed five assignments and one final project.
+            </p>
+            <a class="credential-link"
+               href="https://cs50.harvard.edu/certificates/050b1fc5-5ee6-408b-a96a-03c0175ff437"
+               target="_blank" rel="noopener noreferrer">
+              Verify certificate ↗
+            </a>
+          </article>
+
+          <article class="credential">
+            <div class="project-type">Digital Design · 2026</div>
+            <h3>3D Modeling</h3>
+            <p>
+              American Corner & Makerspace Almaty.
+              Completed a course in 3D Modeling and American Culture,
+              June 8–12, 2026.
+            </p>
+            <a class="credential-link"
+               href="certificates/3D-Modeling.pdf"
+               target="_blank" rel="noopener noreferrer">
+              View certificate ↗
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="container">
+        <div class="section-label">05 / Achievements</div>
+
+        <h2>Achievements</h2>
+
+        <p class="section-intro">
+          Milestones from my academic and athletic journey.
+        </p>
+
+        <div class="credential-grid">
+
+          <article class="credential">
+            <div class="project-type">Sports · Rhythmic Gymnastics</div>
+            <h3>Master of Sport of the Republic of Kazakhstan</h3>
+            <p>
+              A national sports title earned in rhythmic gymnastics.
+            </p>
+          </article>
+
+          <article class="credential">
+            <div class="project-type">Education · 2026</div>
+            <h3>High School Diploma with Honors</h3>
+            <p>
+              Republican Sports Boarding School of Olympic Reserve
+              named after K. Akhmetov, Kazakhstan.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
-        <div class="section-label">04 / Contact</div>
+        <div class="section-label">06 / Contact</div>
 
         <h2>Let's connect.</h2>
 
@@ -452,9 +580,9 @@
         </p>
 
         <div class="social-links">
-         <a class="nav-social" href="https://www.tiktok.com/@formto20" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
-<a class="nav-social" href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-<a class="nav-social" href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a class="nav-social" href="https://www.tiktok.com/@formto20" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          <a class="nav-social" href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a class="nav-social" href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
           <a href="https://github.com/aminaissagali" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
