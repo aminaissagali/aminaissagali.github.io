@@ -64,15 +64,21 @@
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 22px;
       flex-wrap: wrap;
-      font-size: 14px;
+      align-items: center;
+      font-size: 13px;
       color: var(--muted);
     }
 
     .nav-links a:hover,
     .social-links a:hover {
       color: var(--accent);
+    }
+
+    .nav-social {
+      color: var(--accent) !important;
+      font-weight: 600;
     }
 
     .hero {
@@ -187,16 +193,6 @@
       font-size: 14px;
     }
 
-    .tag {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 5px 10px;
-      border-radius: 20px;
-      background: var(--surface);
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     .art-link {
       display: inline-block;
       margin-top: 16px;
@@ -239,10 +235,23 @@
     .social-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 22px;
+      gap: 16px;
       margin-top: 28px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      padding: 10px 17px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
       font-size: 14px;
       font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .social-links a:hover {
+      border-color: var(--accent);
+      background: var(--surface);
     }
 
     footer {
@@ -252,18 +261,22 @@
       font-size: 13px;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 700px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
       .hero {
         padding: 85px 0;
       }
 
       .hero h1 {
         letter-spacing: -2px;
-      }
-
-      .nav-links {
-        gap: 14px;
-        font-size: 12px;
       }
 
       .project-grid,
@@ -290,6 +303,9 @@
           <a href="#projects">Projects</a>
           <a href="#explorations">More</a>
           <a href="#contact">Contact</a>
+          <a class="nav-social" href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a class="nav-social" href="https://www.tiktok.com/@formto20" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          <a class="nav-social" href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
         </div>
       </nav>
     </div>
@@ -436,9 +452,10 @@
         </p>
 
         <div class="social-links">
-          <a href="https://github.com/aminaissagali" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a href="https://www.instagram.com/formtodesmos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
           <a href="https://www.tiktok.com/@formto20" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          <a href="https://www.youtube.com/channel/UCuOvsW19jYZgroQeiKzcKzw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a href="https://github.com/aminaissagali" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </section>
