@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amina Issagali — portfolio in mathematics, programming and engineering.">
+  <title>Amina Issagali | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: #fafbfd;
+      color: #17243a;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1080px, 88%);
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #e8ebf0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+      color: #647087;
+    }
+
+    .nav-links a:hover,
+    .contact-link:hover {
+      color: #3867d6;
+    }
+
+    .hero {
+      padding: 115px 0 105px;
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      color: #3867d6;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #647087;
+      font-size: 18px;
+      max-width: 650px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 7px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #244fba;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #193d96;
+    }
+
+    .secondary {
+      border: 1px solid #dce2ec;
+      background: white;
+    }
+
+    .secondary:hover {
+      border-color: #3867d6;
+    }
+
+    section {
+      padding: 75px 0;
+      border-top: 1px solid #e8ebf0;
+    }
+
+    .section-label {
+      color: #3867d6;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 34px;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .section-intro {
+      color: #647087;
+      max-width: 680px;
+      margin-bottom: 35px;
+    }
+
+    .about-text {
+      max-width: 760px;
+      color: #647087;
+      font-size: 16px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid #e8ebf0;
+      border-radius: 12px;
+      padding: 27px;
+      transition: 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: #b9c9ed;
+    }
+
+    .project-type {
+      color: #3867d6;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .project h3 {
+      font-size: 21px;
+      margin: 12px 0 9px;
+    }
+
+    .project p {
+      color: #647087;
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 5px 10px;
+      background: #f0f4fc;
+      color: #3867d6;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .contact-box {
+      background: #17243a;
+      color: white;
+      padding: 45px;
+      border-radius: 14px;
+    }
+
+    .contact-box p {
+      color: #c4cede;
+      max-width: 550px;
+      margin: 12px 0 25px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    .contact-link {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: #8993a4;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 28px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#">AMINA ISSAGALI</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="hero">
+        <div class="eyebrow">Mathematics · Programming · Engineering</div>
+
+        <h1>Turning ideas<br>into reality.</h1>
+
+        <p>
+          I explore the intersection of mathematics, programming
+          and engineering through creative experiments and
+          independent projects.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#projects">
+            Explore my projects
+          </a>
+
+          <a class="button secondary"
+             href="https://github.com/aminaissagali"
+             target="_blank">
+            GitHub profile ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 / About</div>
+        <h2>A little about me</h2>
+
+        <p class="about-text">
+          I am an aspiring engineer with a strong interest in
+          mathematics, computer science and robotics.
+
+          I enjoy understanding how things work, experimenting
+          with new ideas and turning mathematical concepts into
+          visual and interactive projects.
+
+          This portfolio is a collection of my creative work,
+          programming experiments and engineering explorations.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">02 / Selected work</div>
+        <h2>Projects & explorations</h2>
+
+        <p class="section-intro">
+          A growing collection of things I have created,
+          explored and learned along the way.
+        </p>
+
+        <div class="project-grid">
+
+          <article class="project">
+            <div class="project-type">Mathematics · Digital Art</div>
+            <h3>Form to Desmos</h3>
+            <p>
+              Exploring mathematical functions, equations and
+              geometry by creating digital artwork in Desmos.
+            </p>
+            <span class="tag">Desmos</span>
+          </article>
+
+          <article class="project">
+            <div class="project-type">Programming · CS50</div>
+            <h3>Scratch Game</h3>
+            <p>
+              An interactive game created as part of my
+              introduction to computer science.
+            </p>
+            <span class="tag">Scratch</span>
+          </article>
+
+          <article class="project">
+            <div class="project-type">Engineering · In progress</div>
+            <h3>2D Robotic Arm Simulator</h3>
+            <p>
+              An exploration of forward and inverse kinematics
+              using geometry, trigonometry and programming.
+            </p>
+            <span class="tag">Mathematics · Robotics</span>
+          </article>
+
+          <article class="project">
+            <div class="project-type">Computer Science</div>
+            <h3>More projects coming soon</h3>
+            <p>
+              New experiments, programming projects and
+              engineering ideas will be added here.
+            </p>
+            <span class="tag">Learning by building</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="section-label">03 / Contact</div>
+          <h2>Let's connect.</h2>
+
+          <p>
+            Interested in my work or have an idea for a
+            collaboration? Feel free to explore my projects
+            and connect with me.
+          </p>
+
+          <div class="contact-links">
+            <a class="contact-link"
+               href="https://github.com/aminaissagali"
+               target="_blank">GitHub ↗</a>
+
+            <a class="contact-link"
+               href="https://www.instagram.com/formtodesmos/"
+               target="_blank">Instagram ↗</a>
+
+            <a class="contact-link"
+               href="https://www.tiktok.com/@formto20"
+               target="_blank">TikTok ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Amina Issagali. Built with curiosity.
+  </footer>
+
+</body>
+</html>
